@@ -1,0 +1,10 @@
+.titulo {
+    color: hsl(0, 0%, 0%);
+    font-size: 60px;
+    text-align: center;
+}
+
+.bt-hora { 
+    background-color: #4caf50;
+    border-radius: 20px;
+}
