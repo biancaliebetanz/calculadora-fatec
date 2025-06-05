@@ -1,10 +1,139 @@
-.titulo {
-    color: hsl(0, 0%, 0%);
-    font-size: 60px;
+@font-face {
+    font-family: "Bebas-Neue";
+    src: url("/assets/fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+:root {
+    /* CORES */
+    --branco: #fff;
+    --preto: #000;
+    --verde: #4caf50;
+    --amarelo: #FFC107;
+
+    /* FONTES */
+    --titulo: Bebas-Neue;
+    --subtitulo: Montserrat;
+    --texto: Montserrat;
+    --botao: Bebas-Neue;
+    --input: Montserrat;
+
+    /* TAMANHOS DE FONTE */
+    --pc-titulo: 60px;
+    --pc-subtitulo: 28px;
+    --pc-texto: 22px;
+    --pc-input: 22px;
+    --pc-botao: 22px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.formatacao-pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+    max-width: 100vw;
+    padding: 10vh 10vw;
+    gap: 5vh;
+}
+
+.titulo-preto {
+    font-family: var(--titulo);
+    font-size: var(--pc-titulo);
+    color: var(--preto);
+    font-weight: 100;
     text-align: center;
 }
 
-.bt-hora { 
-    background-color: #4caf50;
-    border-radius: 20px;
+.titulo-verde {
+    font-family: var(--titulo);
+    font-size: var(--pc-titulo);
+    color: var(--verde);
+    font-weight: 100;
+    text-align: center;
 }
+
+.subtitulo-verde {
+    color: var(--verde);
+    font-family: var(--subtitulo);
+    font-size: var(--pc-subtitulo);
+    font-weight: 700;
+    text-align: center;
+}
+
+.subtitulo-preto {
+    color: var(--preto);
+    font-family: var(--subtitulo);
+    font-size: var(--pc-subtitulo);
+    font-weight: 700;
+    text-align: center;
+}
+
+.texto {
+    color: var(--preto);
+    font-family: var(--texto);
+    font-size: var(--pc-texto);
+    font-weight: 300;
+    padding: 5px;
+}
+
+.botao { 
+    border: none;
+    border-radius: 5px;
+    color: var(--branco);
+    font-family: var(--botao);
+    font-size: var(--pc-botao);
+    font-weight: 100;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.input {
+    padding: 5px;
+    font-family: var(--input);
+    font-size: var(--pc-input);
+    border: 1px solid var(--preto);
+}
+
+.borda {
+    border: 1px solid var(--preto);
+}
+
+.botao:nth-child(odd){
+    background-color: var(--verde);
+}
+
+.botao:nth-child(even){
+    background-color: var(--amarelo);
+}
+
+.grupo-botao{
+    width: 40vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.grupo-botao a {
+    border-radius: 20px;
+    font-size: 28px;
+    padding: 50px 10px;
+    min-width: 150px;
+    word-spacing: 9999px; /* uma palavra por linha */
+    word-wrap: break-word;
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+}
+
