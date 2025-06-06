@@ -12,10 +12,10 @@
     /* CORES */
     --branco: #fff;
     --preto: #000;
-    --verde: #4caf50;
-    --verde-claro: #80f984;
-    --amarelo: #FFC107;
-    --amarelo-claro: #f4e1a7;
+    --principal: #4caf50;
+    --principal-claro: #80f984;
+    --secundaria: #FFC107;
+    --secundaria-claro: #f4e1a7;
 
     /* FONTES */
     --titulo: Bebas-Neue;
@@ -58,13 +58,13 @@
 .titulo-verde {
     font-family: var(--titulo);
     font-size: var(--pc-titulo);
-    color: var(--verde);
+    color: var(--principal);
     font-weight: 100;
     text-align: center;
 }
 
 .subtitulo-verde {
-    color: var(--verde);
+    color: var(--principal);
     font-family: var(--subtitulo);
     font-size: var(--pc-subtitulo);
     font-weight: 700;
@@ -99,6 +99,44 @@
     text-decoration: none;
 }
 
+.botao:nth-child(odd){
+    background-color: var(--principal);
+}
+
+.botao:nth-child(even){
+    background-color: var(--secundaria);
+}
+
+.botao:nth-child(odd):hover{
+    background-color: var(--principal-claro);
+    color: var(--principal);
+}
+
+.botao:nth-child(even):hover{
+    background-color: var(--secundaria-claro);
+    color: var(--secundaria);
+}
+
+.botao-icon { 
+    display: flex;
+    align-items: center;
+    background-color: var(--principal);
+    border: none;
+    border-radius: 5px;
+    color: var(--branco);
+    font-family: var(--botao);
+    font-size: var(--pc-botao);
+    font-weight: 100;
+    padding: 5px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+
+.botao-icon:hover {
+    background-color: var(--principal-claro);
+}
+
 .input {
     padding: 5px;
     font-family: var(--input);
@@ -110,22 +148,9 @@
     border: 1px solid var(--preto);
 }
 
-.botao:nth-child(odd){
-    background-color: var(--verde);
-}
-
-.botao:nth-child(even){
-    background-color: var(--amarelo);
-}
-
-.botao:nth-child(odd):hover{
-    background-color: var(--verde-claro);
-    color: var(--verde);
-}
-
-.botao:nth-child(even):hover{
-    background-color: var(--amarelo-claro);
-    color: var(--amarelo);
+.icon {
+    width: 22px;
+    height: 22px;
 }
 
 .grupo-botao{
