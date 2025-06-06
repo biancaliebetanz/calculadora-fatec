@@ -13,7 +13,9 @@
     --branco: #fff;
     --preto: #000;
     --verde: #4caf50;
+    --verde-claro: #80f984;
     --amarelo: #FFC107;
+    --amarelo-claro: #f4e1a7;
 
     /* FONTES */
     --titulo: Bebas-Neue;
@@ -114,6 +116,16 @@
 
 .botao:nth-child(even){
     background-color: var(--amarelo);
+}
+
+.botao:nth-child(odd):hover{
+    background-color: var(--verde-claro);
+    color: var(--verde);
+}
+
+.botao:nth-child(even):hover{
+    background-color: var(--amarelo-claro);
+    color: var(--amarelo);
 }
 
 .grupo-botao{
