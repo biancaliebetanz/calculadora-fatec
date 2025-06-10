@@ -71,6 +71,16 @@ function calcularMedia(){
     var media= (n1+n2)/2
     res.innerHTML= media
 }
+var botaoLimparNota = document.getElementById('botaoLimparNota');
+var n1Input = document.getElementById('n1');
+var n2Input = document.getElementById('n2');
+var res = document.getElementById('res');
+
+botaoLimparNota.addEventListener("click", function () {
+    n1Input.value = "";
+    n2Input.value = "";
+    res.textContent = "...";
+});
 
 
 
@@ -90,8 +100,6 @@ function calcularPorcentagem(){
     porcentagem = (porcentagem * numero) / 100
     res.innerHTML = porcentagem
 }
-
-
 var botaoLimparPorcentagem = document.getElementById('botaoLimparPorcentagem');
 var porcentagemInput = document.getElementById('porcentagem');
 var numeroInput = document.getElementById('numero');
@@ -102,6 +110,8 @@ botaoLimparPorcentagem.addEventListener("click", function () {
     numeroInput.value = "";
     porcentagemResultado.textContent = "...";
 });
+
+
 
 
 
