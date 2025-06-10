@@ -20,23 +20,27 @@
         <div class="espacamento-inputs-notas">
             <div class="grupo-inputs">
                 <label class="texto">Encontre(%):</label>
-                <input class="input-notas" type="number"/>
+                <input class="input-notas" type="number" id="porcentagem"/>
             </div>
             <div class="grupo-input">
                 <label class="texto">De:</label>
-                <input class="input-notas" type="number"/>
+                <input class="input-notas" type="number" id="numero"/>
             </div>
         </div>
         <hr/>
         <div>
             <label class="texto">Resultado:</label>
-            <p class="texto-borda-notas">...</p>
+            <p class="texto-borda-notas" id="res">...</p>
         </div>
         <div class="espacamento-botoes">
-            <button class="botao">Calcular</button>
-            <button class="botao">Limpar</button>
+            <button class="botao" onclick="calcularPorcentagem()">Calcular</button>
+            <button class="botao" id="botaoLimparPorcentagem">Limpar</button>
         </div>
     </section>
-    
+    <script>
+        
+    </script>
+    <script src="../../script.js"></script>
 </body>
 </html>
+
