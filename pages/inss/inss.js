@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
         } else if(s >= 4190.84 && s >= 8157.41){
             return s*0.14;
         } else {
-            return s*0.275
+            return 0;
         }
     }
 
