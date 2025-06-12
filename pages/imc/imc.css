@@ -10,16 +10,6 @@
     gap: 1vw;
 }
 
-.texto-borda-notas {
-    color: var(--preto);
-    font-family: var(--texto);
-    font-size: var(--pc-texto);
-    font-weight: 300;
-    padding: 5px;
-    border: 1px solid var(--preto);
-    width:550px;
-}
-
 .espacamento-botoes {
     display: flex;
     flex: 1;
