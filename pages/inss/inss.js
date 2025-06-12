@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function(){
     const inss = document.querySelector(".inss-valor")
 
     function calcularInss(s){
-        if(s <= 1518){
+        if(s <= 1517){
             return s*0.075;
-        } else if(s >= 1518.01 && s >= 2793.88){
+        } else if(s >= 1518.01 && s <= 2793.88){
             return s*0.09;
         } else if(s >= 2793.89 && s <= 4190.83) {
             return s*0.12;
