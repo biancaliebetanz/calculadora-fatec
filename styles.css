@@ -12,6 +12,7 @@
     /* CORES */
     --branco: #fff;
     --preto: #000;
+    --cinza: #D9D9D9;
     --principal: #4caf50;
     --principal-claro: #80f984;
     --secundaria: #FFC107;
@@ -77,6 +78,12 @@
     font-size: var(--pc-subtitulo);
     font-weight: 700;
     text-align: center;
+}
+
+hr {
+    border: 1px solid var(--cinza);
+    width: 100%;
+    margin: 30px 0;
 }
 
 .texto {

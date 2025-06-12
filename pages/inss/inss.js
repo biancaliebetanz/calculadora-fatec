@@ -24,6 +24,6 @@ botaoCalcular.addEventListener('click', function(){
 
 botaoLimpar.addEventListener('click', function(){
     inss.textContent = "...";
-    salario.value = 0;
+    salario.value = "";
 })
 })

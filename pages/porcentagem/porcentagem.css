@@ -1,8 +1,9 @@
-.espacamento-inputs-notas {
+.espacamento-inputs-porcentagem {
     display: flex;
-    width: 100%;
+    width: 50%;
     flex-direction: column;
     gap: 1vw;
+    align-self: flex-start;
 }
 
 .espacamento-botoes {
