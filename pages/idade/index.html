@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="idade.css">
     <title>Calculadora Fatec</title>
 </head>
+
 <body>
     <section class="formatacao-pagina">
         <a class="botao-icon" href="../../index.html">
@@ -16,31 +18,31 @@
             <h1 class="titulo-verde">Calculadora de Idade</h1>
             <h2 class="subtitulo-preto">Informe sua data de nascimento e veja sua idade</h2>
         </div>
-        <div class="espacamento-inputs">
+        <div class="grupo-input">
+            <label class="texto">Data de nascimento:</label>
+            <input class="input" type="date" />
+        </div>
+        <hr />
+        <div class="grupo-input">
+            <label class="texto">Idade completa:</label>
+            <p class="texto borda">...</p>
+        </div>
+        <div class="idade-resultado">
             <div class="grupo-input">
-                <label class="texto">Data de nascimento:</label>
-                <input class="input" type="date" />
-                </div>
-                </div>
-                <hr/>
-                <div class="idade-completa">
-                    <label class="texto">Idade completa:</label>
-                    <p class="texto borda idade">...</p>
-                </div>
-         <div class="idade-meses">
-                    <label class="texto">Idade em meses:</label>
-                <p class="texto borda idade">...</p>
-                
-                <div class="idade-meses">
-                    <label class="texto">Idade em dias:</label>
-                    <p class="texto borda idade">...</p>
-                </div>
-         </div>
-                <div class="espacamento-botoes">
-                    <button class="botao bt-idade">Calcular</button>
-                    <button class="botao bt-idade-limpar">Limpar</button>
-                </div>
+                <label class="texto">Idade em meses:</label>
+                <p class="texto borda">...</p>
             </div>
-        </section>
+            <div class="grupo-input">
+                <label class="texto">Idade em dias:</label>
+                <p class="texto borda">...</p>
+            </div>
+        </div>
+        <div class="espacamento-botoes">
+            <button class="botao bt-idade">Calcular</button>
+            <button class="botao bt-idade-limpar">Limpar</button>
+        </div>
+        </div>
+    </section>
 </body>
+
 </html>
