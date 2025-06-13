@@ -20,23 +20,23 @@
         <div class="espacamento-inputs-notas">
             <div class="grupo-inputs">
                 <label class="texto">Informe sua altura:</label>
-                <input class="input-notas" type="number"/>
+                <input class="input-notas" type="number" id="altura"/>
             </div>
             <div class="grupo-input">
                 <label class="texto">Informe seu peso:</label>
-                <input class="input-notas" type="number"/>
+                <input class="input-notas" type="number" id="peso"/>
             </div>
         </div>
         <hr/>
         <div class="grupo-input">
             <label class="texto">Seu IMC é:</label>
-            <p class="texto borda">...</p>
+            <p class="texto borda" id="res">...</p>
         </div>
         <div class="espacamento-botoes">
-            <button class="botao">Calcular</button>
-            <button class="botao">Limpar</button>
+            <button class="botao" onclick="calcularIMC()">Calcular</button>
+            <button class="botao" id="botaoLimparIMC">Limpar</button>
         </div>
     </section>
-    
+    <script src="./imc.js"></script>
 </body>
 </html>
