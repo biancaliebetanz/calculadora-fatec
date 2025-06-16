@@ -1,4 +1,4 @@
-/* document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     // Aqui pegamos os valores dos inputs 
     const horaInicialInput = document.querySelectorAll("input[type='time']")[0];
     const horaFinalInput = document.querySelectorAll("input[type='time']")[1];
@@ -61,13 +61,3 @@
         diferencaTotalResultado.textContent = "...";
     });
 });
-*/ 
-
-
-
-
-
-
-
-
-

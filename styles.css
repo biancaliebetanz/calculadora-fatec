@@ -31,11 +31,11 @@
     --pc-texto: 22px;
     --pc-input: 22px;
     --pc-botao: 22px;
-    --celular-titulo: 42px;
-    --celular-subtitulo: 18px;
-    --celular-texto: 14px;
-    --celular-input: 14px;
-    --celular-botao: 14px;
+    --celular-titulo: 44px;
+    --celular-subtitulo: 22px;
+    --celular-texto: 16px;
+    --celular-input: 16px;
+    --celular-botao: 16px;
 }
 
 * {
@@ -192,7 +192,7 @@ hr {
     .formatacao-pagina {
         min-height: 90vh;
         justify-content: center;
-        padding: 5vh 2vw;
+        padding: 5vh 5vw;
         gap: 20px;
     }
     .titulo-preto {
@@ -209,10 +209,14 @@ hr {
     }
     .texto {
         font-size: var(--celular-texto);
+        padding: 7px;
     }
     .botao {
         font-size: var(--celular-botao);
-        padding: 5px 10px;
+        padding: 5px 15px;
+    }
+    .input {
+        width: auto;
     }
     .grupo-botao {
         grid-template-columns: repeat(1, 1fr);

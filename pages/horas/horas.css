@@ -28,3 +28,13 @@
 .espacamento-inputs div {
     width: 100%;
 }
+
+@media (max-width: 500px) {
+    .espacamento-inputs {
+       flex-direction: column;
+       gap: 10px;
+    }
+    .espacamento-botoes {
+        flex: none;
+    }
+}
