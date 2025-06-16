@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Bebas-Neue";
-    src: url("/assets/fonts/BebasNeue-Regular.ttf");
+    src: url("./assets/fonts/BebasNeue-Regular.ttf");
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("/assets/fonts/Montserrat-VariableFont_wght.ttf");
+    src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
 }
 
 :root {
@@ -216,6 +216,7 @@ hr {
         padding: 5px 15px;
     }
     .input {
+        font-size: var(--celular-input);
         width: auto;
     }
     .grupo-botao {
