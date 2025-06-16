@@ -12,3 +12,12 @@
     flex-direction: row;
     align-items: center;
 }
+
+@media (max-width: 500px) {
+    .espacamento-botoes {
+        flex: none;
+    }
+    .idade-resultado {
+        flex-direction: column;
+    }
+}
