@@ -17,13 +17,6 @@
     gap: 50px;
 }
 
-.espacamento-inputs {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    gap: 10vw;
-}
-
 .diferenca-horas {
     width: 100%;
     display: flex;
@@ -47,4 +40,13 @@
     font-family: var(--input);
     font-size: var(--pc-input);
     border: 1px solid var(--preto);
+}
+
+@media (max-width: 500px) {
+    .input-notas {
+        width: auto;
+    }
+    .espacamento-botoes {
+        flex: none;
+    }
 }

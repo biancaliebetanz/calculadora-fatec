@@ -12,3 +12,12 @@
     flex-direction: row;
     gap: 10vw;
 }
+
+@media (max-width: 500px) {
+    .espacamento-inputs {
+        width: 100%;
+    }
+    .espacamento-botoes {
+        flex: none;
+    }
+}

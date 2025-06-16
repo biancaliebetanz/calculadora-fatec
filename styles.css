@@ -154,7 +154,8 @@ hr {
     font-family: var(--input);
     font-size: var(--pc-input);
     border: 1px solid var(--preto);
-    width: 100%;
+    width: auto;
+    background-color: transparent;
 }
 
 .borda {
