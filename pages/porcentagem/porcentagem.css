@@ -12,3 +12,13 @@
     align-items: center;
     gap: 50px;
 }
+
+@media (max-width: 500px) {
+    .espacamento-inputs-porcentagem {
+       flex-direction: column;
+       gap: 10px;
+    }
+    .espacamento-botoes {
+        flex: none;
+    }
+}
